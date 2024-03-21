@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Interior Designer Results</title>
+</head>
+<body>
+<h1>AI Interior Designer Results</h1>
+<ul>
+{% for image_name, suggestion in zip(image_names, suggestions) %}
+<li>{{ image_name }}: {{ suggestion }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
